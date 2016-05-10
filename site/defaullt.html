@@ -2,11 +2,13 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html ng-app dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
+ 	<!-- #BeginTemplate "master.dwt" -->
+
  	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- #BeginEditable "doctitle" -->
-		<title></title>
+		<title>Menu</title>
 		<!-- #EndEditable -->
 		<link rel="stylesheet" href="css/foundation.css" />
 		<link rel="stylesheet" href="css/app.css" />
@@ -21,6 +23,38 @@
         
 	<!-- End Navigation -->
 <!-- #BeginEditable "content" -->
+			
+			
+	<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="main-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
+      <li class="has-submenu">
+        <a href="#">One</a>
+        <ul class="submenu menu vertical" data-submenu>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+
+			
+	</div>
+
+			
+		</div>
 			
 			
 <!-- #EndEditable -->
@@ -41,5 +75,7 @@
     </script>
 
 </body>
+
+<!-- #EndTemplate -->
 
 </html>
